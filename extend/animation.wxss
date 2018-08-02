@@ -1,0 +1,72 @@
+@keyframes circleMove {
+	0% {
+		transform: rotate(0);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+@keyframes showModal {
+	from {
+		-webkit-transform: scale(.1);
+		transform: scale(.1)
+	}
+	to {
+		-webkit-transform: scale(1);
+		transform: scale(1)
+	}
+}
+
+@keyframes scale {
+	from {
+		transform: scale(0);
+		-webkit-transform: scale(0);
+	}
+	to {
+		transform: scale(1);
+	}
+}
+@keyframes move {
+	from {
+		-webkit-transform: translate(0, 6rem);
+		transform: translate(0, 6rem);
+	}
+	to {
+		-webkit-transform: translate(0, 0);
+		transform: translate(0, 0);
+	}
+}
+@keyframes rule {
+	0% {
+		visibility: hidden;
+		transform: translate(-50%, 0%);
+		-webkit-transform: translate(-50%, 0%);
+		-moz-transform: translate(-50%, 0%);
+	}
+	100% {
+		visibility: visible;
+		transform: translate(-50%, -50%);
+		-webkit-transform: translate(-50%, -50%);
+		-moz-transform: translate(-50%, -50%);
+	}
+}
+@keyframes guideHand {
+	0% {
+		opacity: 1;
+		-webkit-transform: scale(1, 1);
+		transform: scale(1, 1)
+	}
+	20%,
+	80% {
+		opacity: 1;
+		-webkit-transform: scale(.8, .8);
+		transform: scale(.8, .8)
+	}
+	100% {
+		opacity: 0;
+		-webkit-transform: scale(.8, .8);
+		transform: scale(.8, .8)
+	}
+}
+

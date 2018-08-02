@@ -1,0 +1,13 @@
+/* 弹窗 */
+
+@import '/extend/animation.wxss';
+@import '/extend/iconfont.wxss';
+@import '/extend/flex.wxss';
+.loading {
+    width: 100%;
+    text-align: center;
+}
+.desc {
+    line-height: 20px;
+    font-size: 10px;
+}

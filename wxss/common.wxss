@@ -1,0 +1,136 @@
+.container { position: relative; min-height: 100vh; width: 100vw; background-color: #f2f2f2; }
+.containerFix { position: fixed; width: 100vw; min-height: 100vh; background-color: #f2f2f2; }
+.containerContent { position: relative; width: 100vw; min-height: 100vh; text-align: center; }
+
+
+
+.fl {float:left}
+.fr {float:right}
+
+.flex {display: flex}
+.flexH {flex-direction: row}
+.flexV {flex-direction: column}
+.inFlex {display: inline-flex}
+
+.pr {position: relative}
+.po {position: absolute;left:0;top:0;width:100%;height:100%}
+.pf {position: fixed;left:0;top:0;width:100%;height:100%;}
+
+.mt-10 {margin-top: 10rpx;}
+.mt-15 {margin-top: 15rpx;}
+.mt-20 {margin-top: 20rpx;}
+.ml-25 {margin-left:25rpx;}
+.ml-30 {margin-left:30rpx;}
+.mr-25 {margin-right:25rpx;}
+.mr-30 {margin-right:30rpx;}
+.m-30 {margin:30rpx;}
+
+.pt-20 {padding-top: 20rpx;}
+.pt-30 {padding-top: 30rpx;}
+.pl-20 {padding-left: 20rpx;}
+.pl-30 {padding-left: 30rpx;}
+.pr-20 {padding-right: 20rpx;}
+.pr-30 {padding-right: 30rpx;}
+.p-20 {padding: 20rpx;}
+.p-30 {padding: 30rpx;}
+
+.h1, .h2, .h3, .h4, .h5, .h6, .h7 {color:#252525;}
+.h1 { font-size:60rpx;}
+.h2 { font-size:48rpx;}
+.h3 { font-size:40rpx;}
+.h4 { font-size:36rpx;}
+.h5 { font-size:32rpx;}
+.h6 { font-size:28rpx;}
+.h7 { font-size:26rpx;}
+.h8 { font-size:24rpx;}
+.bold { font-weight:bold;}
+
+.f24 {font-size:24rpx;}
+.f26 {font-size:26rpx;}
+.f28 {font-size:28rpx;}
+.f30 {font-size:30rpx;}
+.f32 {font-size:32rpx;}
+
+.strike { text-decoration: line-through }
+
+.colorOk { color:#09bb07;}
+.colorError { color:#e64340;}
+.colorDisable { color:#888888;}
+.colorPlaceHolder { color: #bbbbbb;}
+.placeholder { color: #bbbbbb; font-size: 28rpx; text-align: left; line-height: 40rpx; }
+
+
+navigator.cell-hover, view.cell-hover { background-color:#eee;}
+navigator.cell-hover2, view.cell-hover2 { opacity:0.75;}
+.btn-hover { -webkit-filter:grayscale(0.2);}
+
+
+.formView { position: absolute; left: 0; top: 0; width:100%; height:100% }
+.formBtn { position: absolute; width: 100%; height: 100%; left: 0; top: 0; background-color: rgba(0,0,0,0); padding: 0; margin: 0; border: 0; text-align: left; }
+.formBtn:before {border: 0}
+.formBtn:after {border: 0}
+
+.shareBtn { position: absolute; width: 100%; height: 100%; left: 0; top: 0; background-color: rgba(0,0,0,0); padding: 0; margin: 0; border: 0; text-align: left; }
+.shareBtn:before {border: 0}
+.shareBtn:after {border: 0}
+
+
+.separateBanner {width: 750rpx; height: 15rpx; background-color: #eee}
+
+
+
+
+
+/*loading*/
+.loadingHint {display: inline-block; margin: 40rpx auto; padding: 0 20rpx; height: 30rpx; line-height: 30rpx; text-align: center; color: #555555; font-size: 26rpx;}
+.loadingMoreHint { display: inline-block; position:fixed; left:250rpx; bottom:5vh; margin:0; width: 250rpx; padding: 10rpx 0; height: 30rpx; line-height: 30rpx; background-color: rgba(0,0,0,0.5); color: white; font-size: 24rpx; border: 1px solid #dddddd; border-radius: 8rpx; z-index:999;}
+.loadedFalseHint { display: inline-block; margin:400rpx auto 40rpx auto; padding: 15rpx 20rpx 15rpx 20rpx; min-height: 35rpx; max-width: 650rpx; line-height: 35rpx; text-align: center; color: #555555; font-size: 26rpx; border: 1px solid #dddddd; border-radius: 8rpx; background-color: rgba(0,0,0,0);}
+.loadedEmptyHint { display: block; margin: 40rpx auto; line-height: 30rpx; text-align: center; color: #555555; font-size: 26rpx;}
+.loadedEmptyIcon {margin: 160rpx auto 0 auto; width: 450rpx; height: 300rpx;}
+
+/* toast */
+.toastTop {width:100vw; padding:16rpx; position:fixed; top:0; left:0; z-index:999; background-color:#e64340; color:white; text-align:center; font-size: 30rpx; transform:translate(0,-30px); opacity:0;}
+.toastBottom { width:68vw; margin:0 16vw; padding: 15rpx 0; position:fixed; left:0; bottom:40vh; z-index:999; text-align:center; display:flex; align-items:center; justify-content:center; opacity:0;}
+.toastHint { padding:30rpx; background-color:rgba(0,0,0,0.5); box-shadow:1px 1px 16rpx rgba(0,0,0,0.16); line-height:30rpx; font-size:26rpx; color:white; display:inline-block; border-radius:10rpx;}
+
+
+
+
+
+.pageList { position: relative; left:0; top:0; width:100%; height:100vh; z-index:2}
+.pageListLastTip { display:inline-block;margin:30rpx 0 20rpx 0; width: 100%; height: 40rpx; line-height: 40rpx; text-align: center; color: #aaa; font-size: 22rpx;}
+
+.horizonList { position: relative; padding:0 25rpx 0 25rpx; width: 700rpx; height: 90rpx; white-space:nowrap; overflow-x:hidden;}
+
+
+
+.banner {display: block; padding: 0 35rpx; width: calc(100% - 70rpx);background-color: white}
+
+.lineSeparateTip {display: block; padding: 20rpx 0 20rpx 25rpx; width: calc(100% - 25rpx); font-size: 28rpx; color: #888888; background-color: #efefef}
+.linePanel {width: 100%; background-color: white; border-bottom: 1px solid #f8f8f8; text-align: left;}
+.linePanel:first-child {border-top: 1px solid #f8f8f8;}
+.line {display: flex; position: relative; margin-left: 25rpx; padding-right: 25rpx; width: calc(100% - 50rpx); height: 90rpx; line-height: 90rpx; border-bottom: 1px solid #f2f2f2;}
+.line:last-child {border-bottom: 0}
+
+.line_LeftIcon {display: inline-flex; margin: 0 20rpx 0 0; width: 50rpx; height: 100%;}
+
+.lineLeft {display: inline-flex; margin: 0 20rpx 0 0; width: 150rpx; height: 100%; text-align: left; color: #333333; font-size: 28rpx; overflow:hidden; text-overflow: ellipsis; display:-webkit-box; -webkit-line-clamp:1; -webkit-box-orient:vertical;}
+.lineLeftNoIcon {display: inline-flex; margin: 0 20rpx 0 0; width: 220rpx; height: 100%; text-align: left; color: #333333; font-size: 28rpx; overflow:hidden; text-overflow: ellipsis; display:-webkit-box; -webkit-line-clamp:1; -webkit-box-orient:vertical;}
+
+.lineRight {display: inline-flex; margin: 0 20rpx 0 0; width: 420rpx; height: 100%; text-align: right; font-size: 26rpx; color: #555555; overflow:hidden; text-overflow: ellipsis; display:-webkit-box; -webkit-line-clamp:1; -webkit-box-orient:vertical;}
+.lineRightNoIcon {display: inline-flex; margin: 0; width: 530rpx; height: 100%; text-align: right; font-size: 26rpx; color: #555555; overflow:hidden; text-overflow: ellipsis; display:-webkit-box; -webkit-line-clamp:1; -webkit-box-orient:vertical;}
+
+.lineRightIcon {float: right; margin: 0; width: 16rpx; height: 100%;}
+
+
+
+
+/*注意： 不能设置 padding-top或者padding-bottom，否则会导致多余行的文字显示出来*/
+.txtLine1_NoDots, .txtLine2_NoDots, .txtLine3_NoDots { line-height:1em; overflow:hidden; word-wrap: break-word;}
+.txtLine1, .txtLine2, .txtLine3 { overflow:hidden; white-space:normal; word-wrap: break-word; display: -webkit-box; -webkit-box-orient: vertical;}
+.txtLine1_NoDots { height:1em;}
+.txtLine2_NoDots { height:2em;}
+.txtLine3_NoDots { height:3em;}
+.txtLine1 { -webkit-line-clamp: 1;}
+.txtLine2 { -webkit-line-clamp: 2;}
+.txtLine3 { -webkit-line-clamp: 3;}

@@ -1,0 +1,10 @@
+<wxs module="filter" src="../filter/filter.wxs"></wxs>
+<button open-type="contact">进入客服会话</button>
+<button open-type="getUserInfo" lang="zh_CN" bindgetuserinfo="onGotUserInfo">获取用户信息</button>
+<navigator url="/pages/content/content?title=navigate" hover-class="navigator-hover">跳转到新页面</navigator>
+<navigator url="/pages/player/player" hover-class="navigator-hover">猜歌demo</navigator>
+<text class="username">{{username}}</text>
+<image class="userimg" src='{{userimg}}'></image>
+<block wx:for = "{{list}}" wx:key="unique">
+  {{filter.getGameCate(item.type)}}
+</block> 

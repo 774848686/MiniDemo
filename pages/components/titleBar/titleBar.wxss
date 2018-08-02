@@ -1,0 +1,27 @@
+/* 弹窗 */
+
+@import '/extend/animation.wxss';
+@import '/extend/iconfont.wxss';
+.titleBar{
+	position: absolute;
+	width: 100%;
+	top:65rpx;
+	text-align: center;
+}
+.titleBar .back {
+	position: absolute;
+	left:24rpx;
+    width: 44rpx;
+	height: 44rpx;
+	z-index: 2;
+}
+.titleBar .title{
+	position: absolute;
+	left:50%;
+	color: #ffffff;
+	font-size:32rpx;
+	transform: translateX(-50%)
+}
+.titleBar.iphoneX {
+  top: 100rpx; 
+}

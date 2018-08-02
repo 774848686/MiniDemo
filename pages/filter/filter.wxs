@@ -1,0 +1,29 @@
+var filter = {
+  getGameCate: function (type) {
+    var str = "";
+    switch (type) {
+      case 0:
+        str = "小组赛"
+        break;
+      case 1:
+        str = "16强赛"
+        break;
+      case 2: 
+        str = "8强赛"
+        break;
+      case 3:
+        str = "4强赛"
+        break;
+      case 4: 
+        str = "季军赛"
+        break;
+      case 5: 
+        str = "冠军赛"
+        break;
+    }
+    return str;
+  }
+}
+
+module.exports = filter;
+

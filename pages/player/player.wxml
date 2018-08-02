@@ -1,0 +1,20 @@
+<view class="music">
+  <audio src="{{src}}" id="myAudio"></audio>
+  <image src="{{imgvia}}" class="{{ifpluseed==true?'':'rotateInit'}}"></image>
+</view>
+
+<button type="primary" bindtap="audioPlay">播放</button>
+<button type="primary" bindtap="audioPause">暂停</button>
+<button type="primary" bindtap="audioStart">重播</button>
+
+<view class="yourAnswer flex flex-sb">
+<block wx:for='{{canswers}}' wx:key="{{index}}">
+  <text>{{item}}</text>
+</block> 
+  
+</view>
+<view class="randomWords">
+  <block wx:for='{{randomwords}}' wx:key="{{randomwords}}">
+    <view bindtap="getWords" data-index="{{index}}" data-word='{{item}}'>{{item}}</view>
+  </block>
+</view>

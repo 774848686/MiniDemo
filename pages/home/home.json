@@ -1,0 +1,10 @@
+{
+  "navigationBarBackgroundColor": "red",
+  "navigationBarTextStyle": "black",
+  "backgroundColor": "red",
+  "enablePullDownRefresh": false,
+  "navigationStyle": "custom",
+  "usingComponents": {
+    "titleBar": "/pages/components/titleBar/titleBar"
+  }
+}

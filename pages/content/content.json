@@ -1,0 +1,10 @@
+{
+  "navigationBarBackgroundColor": "red",
+  "navigationBarTextStyle": "black",
+  "backgroundColor": "red",
+  "enablePullDownRefresh": false,
+  "navigationStyle": "custom",
+  "usingComponents": {
+    "loading": "/pages/components/loading/loading"
+  }
+}

@@ -1,0 +1,3 @@
+<view>test</view>
+<loading id="loading" ifhidden='{{ifhidden}}' title="精彩稍后"></loading>
+<view bindtap='clickme' data-username="{{username}}">点我</view>

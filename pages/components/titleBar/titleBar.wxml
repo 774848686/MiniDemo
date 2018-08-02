@@ -1,0 +1,4 @@
+ <view class="titleBar  {{isphoneX ? 'iphoneX': ''}}">
+		<image hidden="{{!ifIndex}}" bindtap="onBack" class="back" src="https://cups.bianxianmao.com/worldcup/cupimgs/worldCup/back.png"></image>
+		<text class="title">{{title}}</text>
+</view>

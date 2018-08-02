@@ -1,0 +1,163 @@
+/*flex兼容写法*/
+.flex {
+    display: box;
+    /* OLD - Android 4.4- */
+    display: -webkit-box;
+    /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;
+    /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;
+    /* TWEENER - IE 10 */
+    display: -webkit-flex;
+    /* NEW - Chrome */
+    display: flex;
+    /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  }
+  
+  .flex-h {
+    /* 09版 */
+    -webkit-box-orient: horizontal;
+    /* 12版 */
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+    -ms-flex-direction: row;
+    -o-flex-direction: row;
+    flex-direction: row;
+  }
+  
+  /* 父元素-横向换行 */
+  .flex-hw {
+    /* 09版 */
+    -webkit-box-lines: multiple;
+    /* 12版 */
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    -o-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+  
+  /* 父元素-水平居中（主轴是横向才生效） */
+  .flex-vcenter {
+    /* 09版 */
+    -webkit-box-pack: center;
+    /* 12版 */
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    -ms-justify-content: center;
+    -o-justify-content: center;
+    justify-content: center;
+    /* 其它取值如下：
+          align-items     主轴原点方向对齐
+          flex-end        主轴延伸方向对齐
+          space-between   等间距排列，首尾不留白
+          space-around    等间距排列，首尾留白
+       */
+  }
+  
+  /* 父元素-左右对齐（主轴是横向才生效） */
+  .flex-sb {
+    /* 09版 */
+    -webkit-box-pack: justify;
+    /* 12版 */
+    -webkit-justify-content: space-around;
+    -moz-justify-content: space-around;
+    -ms-justify-content: space-around;
+    -o-justify-content: space-around;
+    justify-content: space-around;
+    /*09版
+     * start(左对齐（默认）) 
+     * | end(右对齐) 
+     * | center(居中对齐) 
+     * | justify(左右对齐)
+     * */
+    /* 其它取值如下：
+          align-items     主轴原点方向对齐
+          flex-end        主轴延伸方向对齐
+          space-between   等间距排列，首尾不留白
+          space-around    等间距排列，首尾留白
+       */
+  }
+  .flex-sa{
+     /* 09版 */
+     -webkit-box-pack: justify;
+     /* 12版 */
+     -webkit-justify-content: space-around;
+     -moz-justify-content: space-around;
+     -ms-justify-content:space-around;
+     -o-justify-content: space-around;
+     justify-content: space-around;
+  }
+  
+  .flex-col {
+    /* 09版 */
+    -webkit-box-orient: vertical;
+    /* 12版 */
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
+  }
+  
+  /* 父元素-竖直居中（主轴是横向才生效） */
+  .flex-acenter {
+    /* 09版 */
+    -webkit-box-align: center;
+    /* 12版 */
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    -o-align-items: center;
+    align-items: center;
+  }
+  .flex-astart{
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+    -moz-align-items: flex-start;
+    -ms-align-items: flex-start;
+    -o-align-items: flex-start;
+    align-items: flex-start;
+  }
+  
+  .flex-vhcenter {
+    display: box;
+    /* OLD - Android 4.4- */
+    display: -webkit-box;
+    /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;
+    /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;
+    /* TWEENER - IE 10 */
+    display: -webkit-flex;
+    /* NEW - Chrome */
+    display: flex;
+    /* NEW, Spec - Opera 12.1, Firefox 20+ */
+    /* 09版 */
+    -webkit-box-pack: center;
+    /* 12版 */
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    -ms-justify-content: center;
+    -o-justify-content: center;
+    justify-content: center;
+    /* 09版 */
+    -webkit-box-align: center;
+    /* 12版 */
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    -o-align-items: center;
+    align-items: center;
+  }
+  
+  .col{
+      -webkit-box-flex: 1;
+      -webkit-flex: 1;
+      -moz-box-flex: 1;
+      -moz-flex: 1;
+      -ms-flex: 1;
+      flex: 1;
+      display: block;
+      width: 100%;
+  }

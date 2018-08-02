@@ -1,0 +1,3 @@
+
+.topBg {position: fixed; left: 0; top: 0; width: 100%; height: 500rpx; background-color: #5b99ec; z-index: 0;}
+.bottomBtn {margin: 40rpx 25rpx 40rpx 25rpx; height: 90rpx; line-height: 90rpx; width: 700rpx; text-align: center; color: white; font-size: 34rpx; background-color: #1aad19; border-radius: 8rpx;}

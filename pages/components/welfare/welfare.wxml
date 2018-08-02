@@ -1,0 +1,6 @@
+ <view class="welfare" hidden="{{ifClose}}">
+	 <view class="welfare_body">
+		<image bindtap="toadMini" data-link='{{path}}' class="welfare_img" src="{{pic}}"></image>
+		<view class="close" bindtap='closeWelfare'></view>
+		</view>
+</view>

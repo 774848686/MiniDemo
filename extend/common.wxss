@@ -1,0 +1,10 @@
+button {
+  display: flex;
+  background-color: transparent;
+  border:none;
+  padding:0;
+  -webkit-tap-highlight-color: transparent;
+}
+button::after{
+    border: none;
+    }

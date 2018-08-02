@@ -1,0 +1,4 @@
+<view class="loading flex flex-vcenter" hidden="{{ifhidden}}">
+     <image style='width:48rpx;height:48rpx'  src="./loading.gif"></image> 
+    <text class="desc">{{title}}</text>
+  </view>

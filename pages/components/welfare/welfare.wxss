@@ -1,0 +1,35 @@
+/* 弹窗 */
+
+@import '/extend/animation.wxss';
+@import '/extend/iconfont.wxss';
+.welfare{
+	position: fixed;
+	width:100vw;
+	top:0;
+	left:0;
+	bottom:0;
+	background-color: rgba(0,0,0,0.75);
+	z-index: 2;
+}
+.welfare_body{
+	position:absolute;
+	top:50%;
+	left:50%;
+	width:560rpx;
+	height:585rpx;
+	transform: translate(-50%,-50%);
+}
+.welfare_img{
+	position:absolute;
+	width:560rpx;
+	height:585rpx;
+}
+.close {
+    position: absolute;
+    top: 16rpx;
+    right: 16rpx;
+    width: 48rpx;
+    height: 48rpx;
+    background: url(https://cups.bianxianmao.com/worldcup/cupimgs/worldCup/close.png) no-repeat center;
+    background-size: 100% 100%;
+}
